@@ -1,12 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDOM from "react-dom";
+import React, { Component } from "react";
+// COMPONENTS
+import Input from "./Components/Input";
+import "./index.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class App extends Component {
+  czCities = [
+    "Praha",
+    "Brno",
+    "Ostrava",
+    "Plsen",
+    "Olomouc",
+    "Liberec",
+    "Ceske Budejovice",
+    "Hradec Kralove",
+    "Usti nad Labem",
+    "Pardubice"
+  ];
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  render() {
+    return (
+      <div className="app">
+        <Input
+          autocompleteData={this.czCities}
+          sortSuggestions="alphabetically"
+        />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));

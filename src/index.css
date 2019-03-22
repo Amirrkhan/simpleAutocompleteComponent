@@ -12,3 +12,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.hidden {
+  display: none;
+}
+
+.display {
+  cursor: pointer;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.dropdown {
+  border-bottom: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+
+.display:hover {
+  background-color: #e8e8e8;
+}
+
+.input__field {
+  width: 244px;
+  box-sizing: border-box;
+}
+
+input {
+  width: inherit;
+  box-sizing: border-box;
+}
+
+.input {
+  margin: 20px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+}
+
+li:hover {
+  background-color: #e8e8e8;
+}
+
+.hovered {
+  background-color: #e8e8e8;
+}
