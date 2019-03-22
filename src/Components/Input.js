@@ -143,7 +143,7 @@ class Input extends Component {
             onKeyDown={keyDownHandler}
             onBlur={event => changeHandler(event, false)}
           />
-          {this.renderSuggestions()}
+          <ul className="input__dropdown">{this.renderSuggestions()}</ul>
         </div>
       </div>
     );
